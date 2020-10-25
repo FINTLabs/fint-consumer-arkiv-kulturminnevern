@@ -1,5 +1,6 @@
 package no.fint.consumer.models.tilskuddfartoy;
 
+import no.fint.consumer.exceptions.EventResponseException;
 import no.fint.consumer.utils.RestEndpoints;
 import no.fint.event.model.HeaderConstants;
 import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResource;
@@ -33,6 +34,14 @@ public class TilskuddFartoyCustomController {
             @RequestHeader(name = HeaderConstants.CLIENT, required = false) String client,
             @RequestBody TilskuddFartoyResource body) {
         return tilskuddFartoyController.putTilskuddFartoyByMappeId(ar + "/" + sekvensnummer, orgId, client, body);
+    }
+
+    //
+    // Exception handlers
+    //
+    @ExceptionHandler(EventResponseException.class)
+    public ResponseEntity handleEventResponseException(EventResponseException e) {
+        return ResponseEntity.status(e.getStatus()).body(e.getResponse());
     }
 
 }

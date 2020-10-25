@@ -2,6 +2,7 @@ package no.fint.consumer.models.tilskuddfredabygningprivateie;
 
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
+import no.fint.consumer.exceptions.EventResponseException;
 import no.fint.consumer.utils.RestEndpoints;
 import no.fint.event.model.HeaderConstants;
 import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFredaBygningPrivatEieResource;
@@ -41,6 +42,15 @@ public class TilskuddFredaBygningPrivatEieCustomController {
             @RequestBody TilskuddFredaBygningPrivatEieResource body) {
         return controller.putTilskuddFredaBygningPrivatEieByMappeId(ar + "/" + sekvensnummer, orgId, client, body);
     }
+
+    //
+    // Exception handlers
+    //
+    @ExceptionHandler(EventResponseException.class)
+    public ResponseEntity handleEventResponseException(EventResponseException e) {
+        return ResponseEntity.status(e.getStatus()).body(e.getResponse());
+    }
+
 
 }
 
