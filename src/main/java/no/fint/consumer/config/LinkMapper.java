@@ -22,6 +22,7 @@ public class LinkMapper {
             .put("no.fint.model.arkiv.kodeverk.DokumentStatus", "/arkiv/kodeverk/dokumentstatus")
             .put("no.fint.model.arkiv.kodeverk.DokumentType", "/arkiv/kodeverk/dokumenttype")
             .put("no.fint.model.arkiv.kodeverk.TilknyttetRegistreringSom", "/arkiv/kodeverk/tilknyttetregistreringsom")
+            .put("no.fint.model.arkiv.kodeverk.Format", "/arkiv/kodeverk/format")
             .put("no.fint.model.arkiv.kodeverk.Variantformat", "/arkiv/kodeverk/variantformat")
             .put("no.fint.model.arkiv.noark.Dokumentfil", "/arkiv/noark/dokumentfil")
             .put("no.fint.model.arkiv.kodeverk.JournalpostType", "/arkiv/kodeverk/journalposttype")
