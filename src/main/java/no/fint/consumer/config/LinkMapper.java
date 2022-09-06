@@ -15,6 +15,7 @@ public class LinkMapper {
             .put(TilskuddFartoy.class.getName(), contextPath + RestEndpoints.TILSKUDDFARTOY)
             .put(TilskuddFredaBygningPrivatEie.class.getName(), contextPath + RestEndpoints.TILSKUDDFREDABYGNINGPRIVATEIE)
             .put("no.fint.model.felles.kodeverk.iso.Landkode", "/felles/kodeverk/iso/landkode")
+            .put("no.fint.model.arkiv.kodeverk.Saksmappetype", "/arkiv/kodeverk/saksmappetype")
             .put("no.fint.model.arkiv.kodeverk.Saksstatus", "/arkiv/kodeverk/saksstatus")
             .put("no.fint.model.arkiv.noark.AdministrativEnhet", "/arkiv/noark/administrativenhet")
             .put("no.fint.model.arkiv.noark.Arkivressurs", "/arkiv/noark/arkivressurs")
