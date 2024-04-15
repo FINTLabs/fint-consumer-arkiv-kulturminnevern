@@ -127,7 +127,10 @@ public class DispensasjonAutomatiskFredaKulturminneCacheService extends CacheSer
         } else {
             data = objectMapper.convertValue(event.getData(), javaType);
         }
-        data.forEach(linker::mapLinks);
+        data.forEach(resource -> {
+            linker.mapLinks(resource);
+            linker.resetSelfLinks(resource);
+        });
         if (KulturminnevernActions.valueOf(event.getAction()) == KulturminnevernActions.UPDATE_DISPENSASJONAUTOMATISKFREDAKULTURMINNE) {
             if (event.getResponseStatus() == ResponseStatus.ACCEPTED || event.getResponseStatus() == ResponseStatus.CONFLICT) {
                 List<CacheObject<DispensasjonAutomatiskFredaKulturminneResource>> cacheObjects = data
