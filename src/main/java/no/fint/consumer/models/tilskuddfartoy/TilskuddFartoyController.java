@@ -182,7 +182,7 @@ public class TilskuddFartoyController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfartoy);
+            return linker.toResource(tilskuddfartoy);
         }    
     }
 
@@ -226,7 +226,7 @@ public class TilskuddFartoyController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfartoy);
+            return linker.toResource(tilskuddfartoy);
         }    
     }
 
@@ -270,7 +270,7 @@ public class TilskuddFartoyController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfartoy);
+            return linker.toResource(tilskuddfartoy);
         }    
     }
 

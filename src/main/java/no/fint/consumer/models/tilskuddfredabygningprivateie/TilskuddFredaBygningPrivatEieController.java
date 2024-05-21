@@ -182,7 +182,7 @@ public class TilskuddFredaBygningPrivatEieController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfredabygningprivateie);
+            return linker.toResource(tilskuddfredabygningprivateie);
         }    
     }
 
@@ -226,7 +226,7 @@ public class TilskuddFredaBygningPrivatEieController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfredabygningprivateie);
+            return linker.toResource(tilskuddfredabygningprivateie);
         }    
     }
 
@@ -270,7 +270,7 @@ public class TilskuddFredaBygningPrivatEieController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(tilskuddfredabygningprivateie);
+            return linker.toResource(tilskuddfredabygningprivateie);
         }    
     }
 

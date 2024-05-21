@@ -182,7 +182,7 @@ public class DispensasjonAutomatiskFredaKulturminneController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(dispensasjonautomatiskfredakulturminne);
+            return linker.toResource(dispensasjonautomatiskfredakulturminne);
         }    
     }
 
@@ -226,7 +226,7 @@ public class DispensasjonAutomatiskFredaKulturminneController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(dispensasjonautomatiskfredakulturminne);
+            return linker.toResource(dispensasjonautomatiskfredakulturminne);
         }    
     }
 
@@ -270,7 +270,7 @@ public class DispensasjonAutomatiskFredaKulturminneController {
 
             fintAuditService.audit(response, Status.SENT_TO_CLIENT);
 
-            return linker.mapAndResetLinks(dispensasjonautomatiskfredakulturminne);
+            return linker.toResource(dispensasjonautomatiskfredakulturminne);
         }    
     }
 
