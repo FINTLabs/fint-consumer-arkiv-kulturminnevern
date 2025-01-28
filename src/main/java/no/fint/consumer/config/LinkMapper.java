@@ -17,6 +17,7 @@ public class LinkMapper {
             .put("no.fint.model.felles.kodeverk.iso.Landkode", "/felles/kodeverk/iso/landkode")
             .put("no.fint.model.arkiv.kodeverk.Saksmappetype", "/arkiv/kodeverk/saksmappetype")
             .put("no.fint.model.arkiv.kodeverk.Saksstatus", "/arkiv/kodeverk/saksstatus")
+            .put("no.fint.model.arkiv.kodeverk.Tilgangsgruppe", "/arkiv/kodeverk/tilgangsgruppe")
             .put("no.fint.model.arkiv.noark.AdministrativEnhet", "/arkiv/noark/administrativenhet")
             .put("no.fint.model.arkiv.noark.Arkivressurs", "/arkiv/noark/arkivressurs")
             .put("no.fint.model.arkiv.noark.Arkivdel", "/arkiv/noark/arkivdel")
