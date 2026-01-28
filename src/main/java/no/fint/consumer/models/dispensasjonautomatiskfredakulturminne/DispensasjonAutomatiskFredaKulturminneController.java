@@ -43,9 +43,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
-import no.fint.model.resource.arkiv.kulturminnevern.DispensasjonAutomatiskFredaKulturminneResource;
-import no.fint.model.resource.arkiv.kulturminnevern.DispensasjonAutomatiskFredaKulturminneResources;
-import no.fint.model.arkiv.kulturminnevern.KulturminnevernActions;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.DispensasjonAutomatiskFredaKulturminneResource;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.DispensasjonAutomatiskFredaKulturminneResources;
+import no.novari.fint.model.arkiv.kulturminnevern.KulturminnevernActions;
 
 @Slf4j
 @Api(tags = {"DispensasjonAutomatiskFredaKulturminne"})

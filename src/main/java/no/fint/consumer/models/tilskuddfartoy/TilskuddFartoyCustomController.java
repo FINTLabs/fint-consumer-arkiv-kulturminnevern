@@ -3,7 +3,7 @@ package no.fint.consumer.models.tilskuddfartoy;
 import no.fint.consumer.exceptions.EventResponseException;
 import no.fint.consumer.utils.RestEndpoints;
 import no.fint.event.model.HeaderConstants;
-import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResource;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResource;
 import no.fint.relations.FintRelationsMediaType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

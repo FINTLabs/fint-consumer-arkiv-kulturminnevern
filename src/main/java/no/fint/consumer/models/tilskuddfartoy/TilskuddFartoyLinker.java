@@ -1,7 +1,7 @@
 package no.fint.consumer.models.tilskuddfartoy;
 
-import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResource;
-import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResources;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResource;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.TilskuddFartoyResources;
 import no.fint.relations.FintLinker;
 import org.springframework.stereotype.Component;
 

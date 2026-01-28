@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import no.fint.consumer.exceptions.EventResponseException;
 import no.fint.consumer.utils.RestEndpoints;
 import no.fint.event.model.HeaderConstants;
-import no.fint.model.resource.arkiv.kulturminnevern.TilskuddFredaBygningPrivatEieResource;
+import no.novari.fint.model.resource.arkiv.kulturminnevern.TilskuddFredaBygningPrivatEieResource;
 import no.fint.relations.FintRelationsMediaType;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
