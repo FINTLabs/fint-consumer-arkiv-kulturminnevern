@@ -4,9 +4,9 @@ import no.fint.consumer.utils.RestEndpoints;
 import java.util.Map;
 import com.google.common.collect.ImmutableMap;
 import no.novari.fint.model.arkiv.kulturminnevern.DispensasjonAutomatiskFredaKulturminne;
-import no.novari.fint.model.arkiv.noark.Klasse;
 import no.novari.fint.model.arkiv.kulturminnevern.TilskuddFartoy;
 import no.novari.fint.model.arkiv.kulturminnevern.TilskuddFredaBygningPrivatEie;
+import no.novari.fint.model.arkiv.noark.Klasse;
 
 public class LinkMapper {
 
